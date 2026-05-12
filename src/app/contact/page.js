@@ -234,116 +234,143 @@ export default function ContactPage() {
                 Send Message
               </h2>
 
-              <form className="space-y-5 sm:space-y-6">
+              <form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="space-y-5 sm:space-y-6"
+>
 
-                {/* 🔥 NAME */}
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="
-                    w-full
-                    border
-                    border-gray-200
-                    rounded-xl
-                    px-4
-                    sm:px-5
-                    py-3
-                    sm:py-4
-                    text-sm
-                    sm:text-base
-                    outline-none
-                    focus:border-[#B89146]
-                    transition
-                  "
-                />
+  {/* ✅ WEB3FORMS ACCESS KEY */}
+  <input
+    type="hidden"
+    name="access_key"
+    value="0eab0bf3-9220-43ae-b012-61a47ccf3437"
+  />
 
-                {/* 🔥 PHONE */}
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="
-                    w-full
-                    border
-                    border-gray-200
-                    rounded-xl
-                    px-4
-                    sm:px-5
-                    py-3
-                    sm:py-4
-                    text-sm
-                    sm:text-base
-                    outline-none
-                    focus:border-[#B89146]
-                    transition
-                  "
-                />
+  {/* ✅ NAME */}
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="
+    text-black
+      w-full
+      border
+      border-gray-200
+       placeholder:text-gray-500
+      rounded-xl
+      px-4
+      sm:px-5
+      py-3
+      sm:py-4
+      text-sm
+      sm:text-base
+      outline-none
+      focus:border-[#B89146]
+      transition
+    "
+  />
 
-                {/* 🔥 EMAIL */}
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="
-                    w-full
-                    border
-                    border-gray-200
-                    rounded-xl
-                    px-4
-                    sm:px-5
-                    py-3
-                    sm:py-4
-                    text-sm
-                    sm:text-base
-                    outline-none
-                    focus:border-[#B89146]
-                    transition
-                  "
-                />
+  {/* ✅ PHONE */}
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone Number"
+    required
+    className="
+    text-black
+      w-full
+      border
+      border-gray-200
+       placeholder:text-gray-500
+      rounded-xl
+      px-4
+      sm:px-5
+      py-3
+      sm:py-4
+      text-sm
+      sm:text-base
+      outline-none
+      focus:border-[#B89146]
+      transition
+    "
+  />
 
-                {/* 🔥 MESSAGE */}
-                <textarea
-                  rows="5"
-                  placeholder="Write Your Message"
-                  className="
-                    w-full
-                    border
-                    border-gray-200
-                    rounded-xl
-                    px-4
-                    sm:px-5
-                    py-3
-                    sm:py-4
-                    text-sm
-                    sm:text-base
-                    outline-none
-                    focus:border-[#B89146]
-                    transition
-                    resize-none
-                  "
-                ></textarea>
+  {/* ✅ EMAIL */}
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="
+    text-black
+      w-full
+      border
+      border-gray-200
+       placeholder:text-gray-500
+      rounded-xl
+      px-4
+      sm:px-5
+      py-3
+      sm:py-4
+      text-sm
+      sm:text-base
+      outline-none
+      focus:border-[#B89146]
+      transition
+    "
+  />
 
-                {/* 🔥 BUTTON */}
-                <button
-                  type="submit"
-                  className="
-                    w-full
-                    bg-[#0B1F33]
-                    hover:bg-black
-                    text-white
-                    py-3
-                    sm:py-4
-                    rounded-xl
-                    text-sm
-                    sm:text-base
-                    font-semibold
-                    transition
-                    duration-300
-                    shadow-lg
-                  "
-                >
-                  Send Message
-                </button>
+  {/* ✅ MESSAGE */}
+  <textarea
+    rows="5"
+    name="message"
+    placeholder="Write Your Message"
+    required
+    className="
+    text-black
+      w-full
+      border
+      border-gray-200
+       placeholder:text-gray-500
+      rounded-xl
+      px-4
+      sm:px-5
+      py-3
+      sm:py-4
+      text-sm
+      sm:text-base
+      outline-none
+      focus:border-[#B89146]
+      transition
+      resize-none
+    "
+  ></textarea>
 
-              </form>
+  {/* ✅ BUTTON */}
+  <button
+    type="submit"
+    className="
+      w-full
+      bg-[#0B1F33]
+      hover:bg-black
+      text-white
+      py-3
+      sm:py-4
+      rounded-xl
+      text-sm
+      sm:text-base
+      font-semibold
+      transition
+      duration-300
+      shadow-lg
+    "
+  >
+    Send Message
+  </button>
+
+</form>
 
             </div>
 

@@ -99,7 +99,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-[#B89146]" />
-              <p>info@landmarkresidency.com</p>
+              <p>Landmarkresidency26@gmail.com</p>
             </div>
 
             <div className="flex items-center gap-3">

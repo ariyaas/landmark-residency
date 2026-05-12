@@ -133,7 +133,7 @@ const isHome = pathname === "/";
 
           {/* Logo */}
           <Image
-            src="/resilogo.png"
+            src="/favicon.png"
             alt="Landmark Residency Logo"
             width={110}
             height={35}
@@ -197,7 +197,7 @@ const isHome = pathname === "/";
         {/* Header */}
         <div className="flex justify-between items-center p-6 border-b border-black/20">
           <Image
-            src="/resilogo.png"
+            src="/favicon.png"
             alt="Logo"
             width={110}
             height={35}
@@ -254,7 +254,7 @@ const isHome = pathname === "/";
 
             <div>
               <p className="font-semibold">Email</p>
-              <p>info@landmark.com</p>
+              <p>Landmarkresidency26@gmail.com</p>
             </div>
           </div>
         </div>

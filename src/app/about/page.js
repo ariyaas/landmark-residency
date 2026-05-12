@@ -51,11 +51,7 @@ export default function AboutPage() {
               md:text-lg
             "
           >
-            Landmark Residency offers clean, affordable,
-            and comfortable rooms in Adirampattinam.
-            We provide both AC and Non-AC suite rooms
-            with modern amenities for a relaxing and
-            convenient stay experience.
+Landmark Residency offers affordable rental rooms, lodge stay, and guest house accommodation in Adirampattinam with AC and Non-AC suite rooms, modern facilities, peaceful hospitality, and comfortable daily stay experience for families, travelers, and business visits.
           </p>
 
         </div>

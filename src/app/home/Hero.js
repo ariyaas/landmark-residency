@@ -85,6 +85,8 @@
 //     </section>
 //   );
 // }
+
+
 "use client";
 
 import Image from "next/image";
@@ -170,7 +172,7 @@ export default function Hero() {
             leading-7
           "
         >
-          Book affordable rental rooms in Adirampattinam with clean,
+          Book affordable rental rooms & Lodge in Adirampattinam with 
           comfortable facilities and peaceful daily stay experience.
         </motion.p>
 

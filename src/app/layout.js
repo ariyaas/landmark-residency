@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { Poppins, Outfit } from "next/font/google";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -16,7 +17,6 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,51 +27,71 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Enhanced SEO Metadata
+// ✅ SEO Metadata
 export const metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://landmarkresidency.co.in"),
 
   title: {
-    default: "Room Booking App | Affordable Rooms",
-    template: "%s | Room Booking",
+ 
+ default:
+  "Landmark Residency | Affordable Rental Rooms in Adirampattinam",
+    template: "%s | Landmark Residency",
   },
 
   description:
-    "Book clean and comfortable rooms at the best price. Easy online booking with real-time availability.",
+  "Landmark Residency offers affordable AC and Non-AC rental rooms in Adirampattinam with WiFi, attached bathroom, balcony, and comfortable family stay facilities.",
+
+  // keywords: [
+  //   "Landmark Residency",
+  //   "Rooms in Adirampattinam",
+  //   "Affordable Rooms",
+  //   "AC Rooms",
+  //   "Non AC Rooms",
+  //   "Daily Stay",
+  //   "Budget Stay",
+  //   "Suite Rooms",
+  //   "Room Booking Adirampattinam",
+  // ],
 
   keywords: [
-    "room booking",
-    "hotel booking",
-    "rent rooms",
-    "budget rooms",
-    "stay booking",
-  ],
+  "Landmark Residency",
+  "Rental Rooms in Adirampattinam",
+  "Rental Room near me",
+  "Budget Stay",
+  "Daily Stay",
+  "Family Stay",
+  "Guest House",
+  "Lodge in Adirampattinam",
+  "AC Rooms",
+  "Non AC Rooms",
+  "Room Booking",
+  "Residency",
+  "Accommodation",
+],
 
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "Landmark Residency" }],
 
-  // Canonical URL
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: "https://landmarkresidency.co.in",
   },
 
-  // Favicons & Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  // ✅ Website Logo / Favicon
+icons: {
+  icon: "/favicon.png",
+},
 
   openGraph: {
-    title: "Room Booking App",
-    description: "Find and book rooms easily with real-time availability.",
-    url: "https://yourdomain.com",
-    siteName: "Room Booking",
+    title: "Landmark Residency",
+    description:
+      "Affordable and comfortable rooms in Adirampattinam with premium stay facilities.",
+    url: "https://landmarkresidency.co.in",
+    siteName: "Landmark Residency",
     images: [
       {
-        url: "/room.jpg",
+       url: "/favicon.png",
         width: 1200,
         height: 630,
-        alt: "Clean and affordable room",
+        alt: "Landmark Residency",
       },
     ],
     locale: "en_US",
@@ -80,9 +100,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Room Booking App",
-    description: "Book rooms easily at best price",
-    images: ["/room.jpg"],
+    title: "Landmark Residency",
+    description:
+      "Affordable rooms and comfortable stay in Adirampattinam.",
+  images: ["/favicon.png"],
   },
 
   robots: {
@@ -93,30 +114,38 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    
-   <html
-  lang="en"
-  className={`scroll-smooth ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
->
+    <html
+      lang="en"
+      className={`scroll-smooth ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <head>
-        {/* ✅ Structured Data (JSON-LD) */}
+
+        
+        {/* ✅ Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Room Booking App",
-              "url": "https://yourdomain.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://yourdomain.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
+            "@type": "LodgingBusiness",
+              name: "Landmark Residency",
+              url: "https://landmarkresidency.co.in",
+           image: "https://landmarkresidency.co.in/favicon.png",
+              description:
+                "Affordable AC and Non-AC suite rooms in Adirampattinam.",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Adirampattinam",
+                addressCountry: "India",
               },
             }),
+
+            
           }}
+          
         />
       </head>
+
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}

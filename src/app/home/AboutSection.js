@@ -136,6 +136,8 @@
 //     </section>
 //   );
 // }
+
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -201,10 +203,7 @@ export default function About() {
               max-w-xl
             "
           >
-            Landmark Residency offers clean, affordable, and comfortable
-            rooms in Adirampattinam. Ideal for daily stay, travelers,
-            and business visits with all essential facilities and peaceful
-            hospitality experience.
+           Landmark Residency provides affordable rental rooms, lodge stay, and guest house accommodation in Adirampattinam. Perfect for daily stay, travelers, family visits, and business trips with clean rooms, modern facilities, and a peaceful hospitality experience.
           </p>
 
           {/* 🔥 FEATURES */}
