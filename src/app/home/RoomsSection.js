@@ -145,7 +145,7 @@ export default function RoomsSection() {
   const rooms = [
     {
       title: "Deluxe AC Suite",
-      price: "₹1750 / Night",
+      price: "₹1999 / Night",
       image: "/resihero.png",
       desc:
         "Luxury living Deluxe AC Suite Rooms in Adirampattinam at a landmark location with premium comfort and modern facilities.",
@@ -162,7 +162,7 @@ export default function RoomsSection() {
 
     {
       title: "AC Suite Room",
-      price: "₹1750 / Night",
+      price: "₹1999 / Night",
       image: "/resiabout2.jpg",
       desc:
         "Spacious AC suite with attached toilet, living space and essential amenities for a comfortable family stay.",
@@ -177,7 +177,7 @@ export default function RoomsSection() {
 
     {
       title: "Non-AC Suite",
-      price: "₹1250 / Night",
+      price: "₹1450 / Night",
       image: "/rblog3.jpg",
       desc:
         "Clean and affordable non-AC suite with all basic facilities, perfect for budget-friendly comfortable stays.",
